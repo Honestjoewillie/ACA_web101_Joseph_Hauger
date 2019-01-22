@@ -4,7 +4,7 @@ h1{
     margin: 5% auto;
 }
 main{
-    background: yellow;
+    background: black;
     width: 60%;
     margin: 5% auto;
 }
@@ -15,7 +15,10 @@ article{
     background: lightseagreen
 }
 h3{
-    color: red !important;
+    color: blue !important
+}
+h3{
+    color: red;
 }
 article > h3{
     font-family: cursive;
@@ -26,4 +29,7 @@ p:hover:first-letter{
     font-size: 200%;
     font-weight: bold;
     color: yellow;
+}
+.two{
+    color: purple
 }
