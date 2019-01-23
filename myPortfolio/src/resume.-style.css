@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+}
+div{
+    border-width:10px;
+    border-style:solid;
+    border-color:black;
+    margin: 15px;
+    padding: 0.5%;
+    background-color: lightskyblue
+}
+body{
+    background-color: slategray;
+    width: 60%;
+    margin: 5% auto;
+}
+header{
+    background-color: darkgrey
+}
+header{
+    border-style: solid black;
+    border-width: 20px;
+}
