@@ -29,6 +29,10 @@ header{
     margin-right: 20%;
     margin-left: 20%;
 }
+#mjh{
+    display: block;
+    margin: 10px auto;
+}
 h1{
     text-decoration: underline;
     text-align: center;
