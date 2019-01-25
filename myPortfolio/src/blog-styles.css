@@ -1,0 +1,35 @@
+h1{
+    color: red;
+    width: 60%;
+    margin: 5% auto;
+}
+main{
+    background: black;
+    width: 60%;
+    margin: 5% auto;
+}
+article{
+    margin: 1% auto;
+    border: 2px solid black;
+    width: 60%;
+    background: lightseagreen
+}
+h3{
+    color: blue !important
+}
+h3{
+    color: red;
+}
+article > h3{
+    font-family: cursive;
+    text-decoration: underline overline yellow;
+    text-align: center;
+}
+p:hover:first-letter{
+    font-size: 200%;
+    font-weight: bold;
+    color: yellow;
+}
+.two{
+    color: purple
+}
