@@ -1,10 +1,14 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://media.wired.com/photos/590951da76f462691f012710/master/pass/lasers-ft.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  
+body, html{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://media.wired.com/photos/590951da76f462691f012710/master/pass/lasers-ft.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  #reflect {
+    -webkit-box-reflect: below -30px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+}
   .logo {
     width: 180px;
     height: 180px;
@@ -15,13 +19,6 @@ body {
     display: grid;
     grid-template-columns: 40% 60%;
     width: 100%;
-  }
-  
-  main {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
   }
   
   nav > a {
@@ -35,7 +32,6 @@ body {
     background: transparent;
     padding: 20px; 
     text-align: center;
-    border: 2px solid white;
   }
   
   .has-border {
@@ -44,29 +40,12 @@ body {
     background: none;
     padding: 20px; 
   }
-  
   nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
   }
-  
-  #profile-pic{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 15% auto;
-    grid-column: 2/3;
-    position: relative;
-    top: -280px;
-}
-#profile-pic:hover{
-    transition: .5s;
-    box-shadow: 0px 0px 40px 40px goldenrod;
-}
-  #profile-pic{
-      border: 4px solid goldenrod
-  }
+
   h1 {
     font-family: pacifico;
     color:white;
@@ -112,12 +91,94 @@ body {
     box-shadow: 0px 0px 40px 15px goldenrod;
     background-color: goldenrod
 }
-
-  #reflect {
-    -webkit-box-reflect: below -30px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+  main {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+  }
+  #profile-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 15% auto;
+    grid-column: 2/3;
+    position: relative;
+    top: -280px;
 }
+#profile-pic:hover{
+    transition: .5s;
+    box-shadow: 0px 0px 40px 40px goldenrod;
+}
+  #profile-pic{
+      border: 4px solid goldenrod
+  }
 .has-border:hover{
     transition: .5s;
     box-shadow: 0px 0px 40px 15px goldenrod;
     background-color: goldenrod
+}
+@media (max-width: 576px){
+  #reflect{
+    margin-left: 107px;
+    align-content: center;
+    -webkit-box-reflect: unset;
+  }
+  header{
+    float: left;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+  .navv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 150px;
+  }
+  h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  #portfolio{
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    padding: 30px;
+    padding-top: 10px;
+    box-sizing: border-box;  
+    background-color: gold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: 0%;
+  }
+  .has-border{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    background-color: gold;
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%
+  }
+  #profile-pic{
+    float: left;
+    align-content: center;
+    box-sizing: border-box;  
+    display: flex;
+    margin-top: 100px;
+    margin-left: 70px;
+    grid-column: unset;
+  }
 }
