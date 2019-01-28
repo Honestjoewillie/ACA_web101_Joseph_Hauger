@@ -120,16 +120,21 @@ body, html{
 }
 @media (max-width: 576px){
   #reflect{
-    margin-left: 107px;
-    align-content: center;
     -webkit-box-reflect: unset;
   }
-  header{
-    float: left;
+  #joe > a{
     align-content: center;
     flex-direction: column;
     justify-content: center;
     display: flex;
+    align-items: center;
+  }
+  header{
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   .navv{
     display: flex;
@@ -172,13 +177,13 @@ body, html{
     width: 70px;
     border-radius: 50%
   }
-  #profile-pic{
-    float: left;
+  main{
     align-content: center;
-    box-sizing: border-box;  
+    justify-content: center;
     display: flex;
-    margin-top: 100px;
-    margin-left: 70px;
-    grid-column: unset;
+    align-items: center;
   }
+}
+@media (max-width: 1300px){
+  
 }
