@@ -14,7 +14,7 @@ body{
 .container{
     height: 95vh;
     display: grid;
-    grid-template-columns: 225px 333px 333px;
+    grid-template-columns: 225px 606px 160px;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header header header"
@@ -42,6 +42,7 @@ body{
 }
 .slide-container{
     border-right: solid red;
+    border-bottom: solid red;
 }
 .side div{
     border: solid black;
@@ -52,6 +53,9 @@ body{
 .banner{
     grid-area: banner;
     padding: 16px;
+}
+.banner::first-line{
+    text-decoration: underline;
 }
 .side{
    display: flex;
@@ -69,8 +73,10 @@ body{
 .calcu{
     grid-area: calcu;
     border-left: black solid;
+    border-right: black solid;
+    font-weight: bold;
     display: grid;
-    grid-template-columns: 50px 50px 50px;
+    grid-template-columns: 53px 53px 53px;
     grid-template-rows: auto auto auto auto auto 160px;
     grid-template-areas:
         "1 2 3"
@@ -96,21 +102,56 @@ body{
     .container{
         display: flex;
         flex-direction: column;
-        border: solid 1px black;
+        justify-content: center;
+        border: solid 1px red;
+        background-image: none;
+        color: white;
+        width: 100%;
+        max-width: 575px;
+        height: 100%;
     }
     .banner{
-        order: 1;
+        border-bottom: red 1px solid;
+    }
+    .banner::first-line{
+        text-decoration: underline;
     }
     .main{
-        order: 2;
+        border: blue 2px solid;
+        align-self: center;
+        margin: 2px;
     }
     .header{
-        order: 3;
+        border-bottom: red 1px solid;
     }
     .side{
-        order: 4;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        -ms-flex-align: center;
+        width: 45%; 
     }
     .calcu{
-        order: 5;
+        grid-area: calcu;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: 33px 33px 33px;
+        grid-template-rows: auto auto auto auto auto 160px;
+        grid-template-areas:
+            "1 2 3"
+            "4 5 6"
+            "7 8 9"
+            "0 / *"
+            "- + ="
+            "x x x";
+        width: 100%;
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid red;
+        background: black;
     }
 }
