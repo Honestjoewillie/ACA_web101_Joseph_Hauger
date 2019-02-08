@@ -3,29 +3,64 @@ body{
 }
 header{
     text-align: center;
-    border: solid blue;
     margin-bottom: 20px;
 }
 h1{
     font-size: 100px;
-    font-family: fantasy;
+    font-family: cursive;
+    text-decoration: underline;
+}
+.header{
+    display: flexbox;
+    flex-direction: row;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.home{
+    border: solid 2px black;
+    padding: 5px;
+    margin: 0 20px;
+    color: black;
+}
+.about{
+    border: solid 2px black;
+    padding: 5px;
+    margin: 0 20px;
+    color: black;
+}
+.hours{
+    border: solid 2px black;
+    padding: 5px;
+    margin: 0 20px;
+    color: black;
+}
+.contact{
+    border: solid 2px black;
+    padding: 5px;
+    margin: 0 20px;
+    color: black;
 }
 .contain1{
     position: relative;
     text-align: center;
     color: yellow;
     width: 100%;
-    height: 80%;
 }
 .contain1 img{
     width: 100%;
+    height: 750px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
 }
 .info{
     position: absolute;
     top: 8%;
-    left: 5%;
+    left: 1%;
     font-size: 30px;
     text-align: left;
+    border: solid 1px yellow;
+    padding: 15px;
 
 }
 h2{
@@ -36,21 +71,55 @@ h3{
 }
 .contain2{
     display: flex;
-    padding: 5px;
-    margin: 25px;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 .image{
     height: 280px;
     width: 280px;
-    margin: 50px;
-    border: solid 1px black;
-    
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid 1px black; 
 }
 .footer{
     background-color: black;
     color: white;
     text-align: center;
     padding: 20px;
+}
+@media (max-width : 600px){
+    h1{
+        font-size: 30px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+    }
+    .home{
+        border: solid 1px white;
+        margin-bottom: 15px;
+    }
+    .about{
+        display: none;
+    }
+    .hours{
+        display: none;
+    }
+    .contact{
+        border: solid 1px white;
+    }
+    .contain1{
+        display: none;
+    }
+    body{
+        background-color: black;
+        color: white;
+    }
 }
