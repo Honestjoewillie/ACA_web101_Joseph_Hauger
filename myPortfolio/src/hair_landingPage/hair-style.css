@@ -93,6 +93,20 @@ h3{
     text-align: center;
     padding: 20px;
 }
+@media (max-width: 1000px){
+    h1{
+        font-size: 60px;
+    }
+    .header{
+        font-size: 20px;
+    }
+    .contain1 img{
+        height: 80%;
+    }
+    .info{
+        font-size: 20px;
+    }
+}
 @media (max-width : 600px){
     h1{
         font-size: 30px;
@@ -105,6 +119,7 @@ h3{
     .home{
         border: solid 1px white;
         margin-bottom: 15px;
+        color: white;
     }
     .about{
         display: none;
@@ -114,6 +129,7 @@ h3{
     }
     .contact{
         border: solid 1px white;
+        color: white;
     }
     .contain1{
         display: none;
