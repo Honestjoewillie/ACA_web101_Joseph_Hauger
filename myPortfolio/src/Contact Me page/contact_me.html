@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./contact.css">
     <title>Contact me!</title>
 </head>
 <body>
-    <div>testing</div>
+    <form action="" method="POST" class="STYLE-NAME">
+    <h1>Contact me!
+        <span>Please fill in all information</span>
+    </h1>
+    <label>
+        <Span>Your Name:</Span>
+        <input id="name" type="text" name="name" placeholder="Your Full Name">
+    </label>
+    <label>
+        <span>Your email:</span>
+        <input id="email" type="email" name="email" placeholder="Your email">
+    </label>
+    <label>
+        <span>Message:</span>
+        <textarea id="message" name="message" placeholder="Your Message to me">
+        </textarea>
+    <label>
+        <span>Choose:</span>
+        <select>
+            <option value="Kung-fu Movies">Kung-fu Movies</option>
+            <option value="Forest Bathing">Forest Bathing</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Mystery Surprise!">Mystery Surprise!</option>
+            <option value="$1.00">$1.00</option>
+        </select>
+    </label>
+    <label>
+        <button type="submit" class="submit" value="submit">Send</button>
+    </label>
+    </form>
 </body>
 </html>
