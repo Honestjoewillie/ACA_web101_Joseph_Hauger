@@ -6,7 +6,7 @@ form{
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
-    background: lightseagreen transparent;
+    background: transparent;
     padding: 25px 15px 25px 10px;
     text-shadow: 1xp 1xp 1xp black;
     border: solid 1xp red;
@@ -69,4 +69,12 @@ textarea{
 .submit:hover{
     background: blue;
     color: white;
+}
+form{
+    animation-name: change;
+    animation-duration: 30s;
+}
+@keyframes change{
+    from {background-color: red;}
+    to {background-color: transparent;}
 }
