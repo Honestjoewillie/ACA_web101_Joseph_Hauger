@@ -72,7 +72,7 @@ textarea{
 }
 form{
     animation-name: change;
-    animation-duration: 30s;
+    animation-duration: 25s;
 }
 @keyframes change{
     from {background-color: red;}
