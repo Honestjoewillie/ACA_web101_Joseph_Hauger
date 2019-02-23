@@ -3,73 +3,85 @@ body{
     color: white;
 }
 #one{
-    border: solid red 1px;
+    border: solid white 1px;
+    background-color: red;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #two{
-    border: solid orange 1px;
+    border: solid white 1px;
+    background-color: orange;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #three{
-    border: solid gold 1px;
+    border: solid white 1px;
+    background-color: gold;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #four{
-    border: solid green 1px;
+    border: solid white 1px;
+    background-color: green;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #five{
-    border: solid blue 1px;
+    border: solid white 1px;
+    background-color: blue;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #six{
-    border: solid indigo 1px;
+    border: solid white 1px;
+    background-color: indigo;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #seven{
-    border: solid violet 1px;
+    border: solid white 1px;
+    background-color: violet;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #eight{
-    border: solid magenta 1px;
+    border: solid white 1px;
+    background-color: magenta;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #nine{
-    border: solid mediumspringgreen 1px;
+    border: solid white 1px;
+    background-color: mediumspringgreen;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #ten{
-    border: solid salmon 1px;
+    border: solid white 1px;
+    background-color: salmon;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #eleven{
-    border: solid  olive 1px;
+    border: solid white 1px;
+    background-color: olive;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 }
 #twelve{
-    border: solid teal 1px;
+    border: solid white 1px;
+    background-color: teal;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
@@ -80,21 +92,74 @@ body{
     margin: 20px;
 }
 .squares{
-    width: 10%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    padding-left: 800px;
+    align-content: center;
+}
+.squares .odd{
+    -webkit-transform: scale(1, 1) translate(0px) rotate(-4680deg);
+    -moz-transform: scale(1, 1) translate(0px) rotate(-4680deg);
+    -o-transform: scale(1, 1) translate(0px) rotate(-4680deg);
+    -ms-transform: scale(1 , 1) translate(0px) rotate(-4680deg);
+    transform: scale(1 , 1) translate(0px) rotate(-4680deg);
+    transition: 5s;
+    margin-bottom: 0px translate(0px) rotate(-4680deg);
+}
+.squares .even{
+    -webkit-transform: scale(1, 1) translate(0px) rotate(4680deg);
+    -moz-transform: scale(1, 1) translate(0px) rotate(4680deg);
+    -o-transform: scale(1, 1) translate(0px) rotate(4680deg);
+    -ms-transform: scale(1 , 1) translate(0px) rotate(4680deg);
+    transform: scale(1 , 1) translate(0px) rotate(4680deg);
+    transition: 5s;
+    margin-bottom: 0px translate(0px) rotate(4680deg);
 }
 .squares:hover .odd{
-    -webkit-transform: scale(2,2);
-    -moz-transform: scale(2,2);
-    -o-transform: scale(2,2);
-    -ms-transform: scale(2,2);
-    transform: scale(2,2);
-    margin-bottom: 50px;
+    -webkit-transform: scale(2,2) translate(300px) rotate(4680deg);
+    -moz-transform: scale(2,2) translate(300px) rotate(4680deg);
+    -o-transform: scale(2,2) translate(300px) rotate(4680deg);
+    -ms-transform: scale(2,2) translate(300px) rotate(4680deg);
+    transform: scale(2,2) translate(300px) rotate(4680deg);
+    transition: 5s;
+    margin-bottom: 50px translate(100px) rotate(4680deg);
+    border-radius: 50%;
 }
 .squares:hover .even{
-    -webkit-transform: scale(0.5,0.5);
-    -moz-transform: scale(0.5,0.5);
-    -o-transform: scale(0.5,0.5);
-    -ms-transform: scale(0.5,0.5);
-    transform: scale(0.5,0.5);
+    -webkit-transform: scale(0.5,0.5) translate(-500px) rotate(-4680deg);
+    -moz-transform: scale(0.5,0.5) translate(-500px) rotate(-4680deg);
+    -o-transform: scale(0.5,0.5) translate(-500px) rotate(-4680deg);
+    -ms-transform: scale(0.5,0.5) translate(-500px) rotate(-4680deg);
+    transition: 5s;
+    transform: scale(0.5,0.5) translate(-500px) rotate(-4680deg);
+    border-radius: 50%;
+}
+@media (max-width: 480px){
+    .body{
+        width: 300px;
+    }
+    .squares{
+        width: 300px;
+        margin: 0;
+        padding-left: 95px;
+        border: solid 1px yellow;
+    }
+    .squares:hover .odd{
+        -webkit-transform: scale(2,2) translate(78px) rotate(4680deg);
+        -moz-transform: scale(2,2) translate(78px) rotate(4680deg);
+        -o-transform: scale(2,2) translate(78px) rotate(4680deg);
+        -ms-transform: scale(2,2) translate(78px) rotate(4680deg);
+        transform: scale(2,2) translate(78px) rotate(4680deg);
+        transition: 5s;
+        margin-bottom: 50px translate(78px) rotate(4680deg);
+        border-radius: 50%;
+    }
+    .squares:hover .even{
+        -webkit-transform: scale(0.5,0.5) translate(-20px) rotate(-4680deg);
+        -moz-transform: scale(0.5,0.5) translate(-200px) rotate(-4680deg);
+        -o-transform: scale(0.5,0.5) translate(-200px) rotate(-4680deg);
+        -ms-transform: scale(0.5,0.5) translate(-200px) rotate(-4680deg);
+        transition: 5s;
+        transform: scale(0.5,0.5) translate(-200px) rotate(-4680deg);
+        border-radius: 50%;
 }
