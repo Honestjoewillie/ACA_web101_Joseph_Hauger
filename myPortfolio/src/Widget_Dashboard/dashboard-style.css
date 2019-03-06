@@ -97,6 +97,15 @@ body{
 .answer{
     grid-column: 1/4;
 }
+#findMe{
+    color: red;
+    background-color: yellow;
+    cursor: pointer;
+    border: solid 1px black;
+}
+#mapLink{
+    font-size: 15px;
+}
 
 @media (max-width: 575px){
     .container{
