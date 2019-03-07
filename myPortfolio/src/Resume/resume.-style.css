@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-image: url(https://s3.amazonaws.com/bandw-gallery/large/12115/Mississippi_John_Hurt_at_Newport.jpg?1302585529);
+    background-image: url(https://images.unsplash.com/photo-1492446190781-58ac4285911d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1294&q=80);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:top center;
@@ -9,14 +9,14 @@ body{
     margin: auto;
 }
 .blue-box{
-    border-width:10px;
+    border-width:5px;
     border-style:solid;
-    border-color:black;
+    border-color: blue;
     margin-top: 20px;
     margin-right: 15%;
     width: 65vw;
     padding: 0.5%;
-    background-color: lightskyblue;
+    background-color: rgb(222, 227, 230);
     text-align: left;
 }
 header{
@@ -32,17 +32,16 @@ header{
 #me{
     display: block;
     margin: 10px auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px 40px silver;
 }
 h1{
     text-decoration: underline;
     text-align: center;
     color: yellow;
 }
-.video1{
-    float: left;
-    padding: 5px;
-    margin: 10px;
-    border: solid black;
+h2{
+    text-decoration: underline;
 }
 #articles{
     float: left;
@@ -51,9 +50,9 @@ h1{
 }
 .article{
     overflow: auto;
-    background: darkgrey;
+    background: rgb(233, 230, 194);
     border-style: solid;
-    border-color:black;
+    border-color: blue;
     padding: 0.5%;
     text-align: left;
     margin-bottom: 25px;
@@ -67,4 +66,28 @@ footer{
 }
 #main-material{
     margin-left: 22vw;
+}
+h3{
+    font-style: italic;
+    text-decoration: underline;
+}
+@media (max-width: 576px){
+    #articles{
+        float: none;
+        margin: auto;
+        width: 80%;
+        display: flexbox;
+        flex-direction: row;
+    }
+    #me{
+        width: 75%;
+        height: 75%;
+    }
+    #main-material{
+        width: 80%;
+        margin: auto;
+    }
+
+    )
+
 }
