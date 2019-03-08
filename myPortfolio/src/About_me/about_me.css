@@ -3,9 +3,6 @@ body, html{
     background-color: black;
     font-size: 20px;
 }
-.blank{
-    height: 200px;
-}
 header{
     background-color: black;
     color: white;
@@ -126,4 +123,118 @@ footer{
         display: flex;
         flex-direction: row;
     }
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 600px;
+    padding-top: 250px;
+    background-image: url(./ACL.JPG);
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+    overflow: hidden; 
+    position: relative; 
+}
+.music_pic{
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(./trophy.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+    height: 300px;
+}
+.bold{
+    text-decoration: underline;
+    font-display: underline;
+}
+.music{
+    color: white;
+    align-content: center;
+    padding-left: 10px;
+    padding-top: 80px;
+    height: 300px;
+}
+.yoga{
+    color: white;
+    align-content: center;
+    padding-left: 10px;
+    padding-top: 80px;
+    height: 400px;
+}
+.yoga_pic{
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(./Sukasana.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+    height: 500px;
+}
+.zen{
+    color: white;
+    align-content: center;
+    padding-left: 10px;
+    padding-top: 80px;
+    height: 400px;
+}
+.test{
+    height: 800px;
+}
+.path{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100%;
+    background-image: url(./zenpath.jpg);
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+    overflow: hidden; 
+    position: relative;
+}
+footer{
+    height: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+#move{
+    float: left;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+#plant{
+    display: none;
+}
+#moved{
+    float: right;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+#planttwo{
+    display: none;
+}
+  
+    
 }
