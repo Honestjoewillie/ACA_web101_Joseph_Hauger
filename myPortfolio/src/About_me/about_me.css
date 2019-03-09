@@ -43,7 +43,7 @@ header{
     align-content: center;
     display: flex;
     flex-direction: center;
-    padding-left: 400px;
+    padding-left: 100px;
     padding-top: 80px;
     height: 300px;
 }
@@ -123,7 +123,6 @@ footer{
         display: flex;
         flex-direction: row;
     }
-}
 header{
     background-color: black;
     color: white;

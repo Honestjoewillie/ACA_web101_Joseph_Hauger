@@ -1,4 +1,8 @@
-//this is outlining my board
+//I found a great Youtubue guide that taught me how to do this.
+//The video is only an 51 minutes long...but it took me about 2 days.
+//I understand the AI sort of...but no way could I build it with out the video guide...even then I struggled a lot.
+
+//this is outlining my board and all possible wins
 var origBoard;
 const huPlayer = '0';
 const aiPlayer = 'X';
@@ -103,10 +107,11 @@ function checkTie() {
     }
     return false;
 }
-
+//it gets crazy from here on down
+//the main to functions are "newBoard and player" basicaly, who is play, did they win and review, assess and reset the board
 function minimax(newBoard, player) {
     var availSpots = emptySquares();
-
+//if 0 takes a spot return is -10, X is 10, if no places left 0
     if (checkWin(newBoard, huPlayer)) {
         return {score: -10};
     }   else if (checkWin(newBoard, aiPlayer)){
@@ -114,12 +119,14 @@ function minimax(newBoard, player) {
     }   else if (availSpots.length === 0){
         return {score: 0};
     }
+    //this collects the score from the checkwin and resets the "number of the square to a letter"
+    //this loops through all empty spots and collects each move and score.
     var moves = [];
     for (var i = 0; i < availSpots.length; i++) {
         var move = {};
         move.index = newBoard[availSpots[i]];
         newBoard[availSpots[i]] = player;
-
+//reset as to who is playing...ai or human and what is the score "-10, 10 or 0" meaning who played, what happened and does the board need resting?
         if (player == aiPlayer) {
             var result = minimax(newBoard, huPlayer);
             move.score = result.score;
@@ -133,7 +140,8 @@ function minimax(newBoard, player) {
 
         moves.push(move);
     }
-
+//this helps the AI choose the best move or hightest score via its loop aray
+//also if there is move that is equal in score it only stores/scores the first move.
     var bestMove;
     if(player === aiPlayer) {
         var bestScore = -10000;
@@ -144,6 +152,7 @@ function minimax(newBoard, player) {
             }
         }
     }   
+    //enter the human playing and the AI reviewing the human players moves
     else {
         var bestScore = 10000;
         for(var i = 0; i < moves.length; i++){
