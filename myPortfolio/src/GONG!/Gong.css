@@ -1,0 +1,19 @@
+body,html {
+    background-color: black;
+    color: red;
+}
+header{
+    text-align: center;
+}
+.one{
+    border: solid 1px red;
+    width: 900px;
+    height: 600px;
+    margin-left: 490px;
+    margin-top: 100px;
+    justify-content: center;
+    box-shadow:  0px 0px 40px 15px red;
+}
+.gong{
+    height: 600px;
+}
