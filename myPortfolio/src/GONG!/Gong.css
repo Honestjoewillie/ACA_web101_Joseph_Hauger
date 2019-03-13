@@ -11,17 +11,20 @@ header{
     width: 900px;
     height: 600px;
     margin-left: 490px;
-    margin-top: 100px;
+    margin-top: 60px;
     justify-content: center;
-    box-shadow:  0px 0px 40px 15px red;
+    box-shadow:  0px 0px 40px 40px red;
+    border-radius: 50%;
 }
 .gong{
     height: 600px;
+    border-radius: 50%;
 }
-#status{
+.status{
     border: solid 1px red;
     height: 50px;
     width: 80px;
+    box-shadow: 0px 0px 10px 10px red;
 }
 .levels{
     display: flex;
@@ -31,19 +34,22 @@ header{
     color: yellow;
 }
 .monk{
-    padding: 5px;
     margin: 0 20px;
     border: solid 1px red;
+    vertical-align: middle;
 }
 .fu{
     padding: 5px;
     margin: 0 20px;
+    border: solid 1px red;
 }
 .yoda{
     padding: 5px;
     margin: 0 20px;
+    border: solid 1px red;
 }
-.bud{
+.Bud{
     padding: 5px;
     margin: 0 20px;
+    box-shadow: 1px 1px 40px 15px gold;
 }

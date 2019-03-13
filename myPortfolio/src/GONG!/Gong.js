@@ -3,4 +3,10 @@ function play() {
     console.log("clicked")
     var audio = document.getElementById("gonged");
     audio.play();
+
+    function count(){
+        
+    }
+
 }
+
