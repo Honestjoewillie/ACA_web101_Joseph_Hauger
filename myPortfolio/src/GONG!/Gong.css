@@ -1,6 +1,7 @@
 body,html {
     background-color: black;
     color: red;
+    height: 100%;
 }
 header{
     text-align: center;
@@ -16,4 +17,33 @@ header{
 }
 .gong{
     height: 600px;
+}
+#status{
+    border: solid 1px red;
+    height: 50px;
+    width: 80px;
+}
+.levels{
+    display: flex;
+    flex-direction: row;
+    margin-left: 500px;
+    margin-top: 70px;
+    color: yellow;
+}
+.monk{
+    padding: 5px;
+    margin: 0 20px;
+    border: solid 1px red;
+}
+.fu{
+    padding: 5px;
+    margin: 0 20px;
+}
+.yoda{
+    padding: 5px;
+    margin: 0 20px;
+}
+.bud{
+    padding: 5px;
+    margin: 0 20px;
 }
