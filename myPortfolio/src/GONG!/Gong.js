@@ -9,15 +9,16 @@ function play() {
     var audio = document.getElementById("gonged");
     audio.play();
     document.getElementById("status").innerHTML = count();
+    
+    function scream() {
+        if (counter = 20) {
+            var audio = document.getElementById("ya");
+            audio.play();
+        }
+    }
 }
 
 //function at 20 gongs audio of bruce lee "woooawoo"
-function scream() {
-    if (count = 20){
-        var audio = document.getElementById("ya");
-        audio.scream();
-    }
-}
 
 //function at 50 gongs audio of "heavenly glory"
 
