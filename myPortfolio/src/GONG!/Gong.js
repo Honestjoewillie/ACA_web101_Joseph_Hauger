@@ -10,10 +10,23 @@ function play() {
     audio.play();
     document.getElementById("status").innerHTML = count();
     
-        switch (audio) {
-            case (document.getElementById("status").innerHTML = 20:
-                var audio = document.getElementById("ya");
+       switch (true) {
+           case (document.getElementById("status").innerHTML == 20):
+               var audio = document.getElementById("ya");
                 audio.play();
+                break;
+            case (document.getElementById("status").innerHTML == 50):
+                var audio = document.getElementById("heaven");
+                audio.play();
+                break;
+            case (document.getElementById("status").innerHTML == 75):
+                var audio = document.getElementById("force");
+                audio.play();
+                break;
+            case (document.getElementById("status").innerHTML > 100):
+                var audio = document.getElementById("Om");
+                audio.play();  
+                window.open("./Buddha.html");    
         }
 }
 
