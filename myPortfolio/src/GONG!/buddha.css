@@ -1,0 +1,12 @@
+
+h1 {
+    position: absolute;
+    color: white;
+    top: 275px;
+    left: 80px;
+    width: 50%;
+    border: solid yellow 2px;
+    animation-delay: 15s;
+    font-weight: bold;
+    font-style: italic;
+}

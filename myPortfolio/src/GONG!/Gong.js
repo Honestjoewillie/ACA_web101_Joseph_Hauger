@@ -7,7 +7,12 @@ var count = (function() {
 })();
 function play() {
     var audio = document.getElementById("gonged");
+    if (audio.paused) {
     audio.play();
+    }
+    else {
+        audio.currentTime = 0
+    }
     document.getElementById("status").innerHTML = count();
     
        switch (true) {
@@ -23,9 +28,7 @@ function play() {
                 var audio = document.getElementById("force");
                 audio.play();
                 break;
-            case (document.getElementById("status").innerHTML > 100):
-                var audio = document.getElementById("Om");
-                audio.play();  
+            case (document.getElementById("status").innerHTML > 99):  
                 window.open("./Buddha.html");    
         }
 }

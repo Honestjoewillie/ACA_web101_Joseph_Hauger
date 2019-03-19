@@ -1,7 +1,8 @@
 body,html {
     background-color: black;
     color: red;
-    height: 100%;
+    height: 100vh;
+    cursor: url("./work.png"), auto;
 }
 header{
     text-align: center;
