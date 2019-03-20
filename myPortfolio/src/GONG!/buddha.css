@@ -1,4 +1,7 @@
 
+body{
+    height: 100%;
+}
 h1 {
     position: absolute;
     color: white;
@@ -9,4 +12,45 @@ h1 {
     animation-delay: 15s;
     font-weight: bold;
     font-style: italic;
+}
+#float {
+    position: relative;
+    -webkit-animation: floatBubble 10s infinite  normal ease-out;
+    animation: floatBubble 10s infinite  normal ease-out;
+}
+#floated {
+    position: relative;
+    margin-left: 280px;
+    -webkit-animation: floatBubble 15s infinite  normal ease-out;
+    animation: floatBubble 15s infinite  normal ease-out;
+}
+#floating {
+    position: relative;
+    margin-left: 480px;
+    -webkit-animation: floatBubble 20s infinite  normal ease-out;
+    animation: floatBubble 20s infinite  normal ease-out;
+}
+#floats {
+    position: relative;
+    margin-bottom: 2000px;
+    margin-left: 880px;
+    -webkit-animation: floatBubble 10s infinite  normal ease-out;
+    animation: floatBubble 10s infinite  normal ease-out;
+    height: auto;
+}
+@-webkit-keyframes floatBubble {
+    0% {
+        top:800px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@keyframes floatBubble {
+    0% {
+        top:800px;
+    }
+    100% {
+        top: 0px;
+    }
 }

@@ -68,3 +68,21 @@ header{
     line-height: 50px;
     padding: 5px;
 }
+/*
+#float {
+    display: none;
+  }
+  
+  #gonged:active ~ #float{ 
+    position: relative;
+    animation: floatBubble 2s infinite  normal ease-out;
+  }
+
+@keyframes floatBubble {
+    0% {
+        top:500px;
+    }
+    100% {
+        top: 0px;
+    }
+}  
