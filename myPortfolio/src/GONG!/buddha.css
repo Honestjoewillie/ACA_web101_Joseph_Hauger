@@ -13,37 +13,76 @@ h1 {
     font-weight: bold;
     font-style: italic;
 }
+#floateth {
+    position: relative;
+    -webkit-animation: floatBubble 40s infinite  normal ease-out;
+    animation: floatBubble 40s infinite  normal ease-out;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
 #float {
     position: relative;
-    -webkit-animation: floatBubble 10s infinite  normal ease-out;
-    animation: floatBubble 10s infinite  normal ease-out;
+    -webkit-animation: floatBubble 30s infinite  normal ease-out;
+    animation: floatBubble 30s infinite  normal ease-out;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
 }
 #floated {
     position: relative;
-    margin-left: 280px;
-    -webkit-animation: floatBubble 15s infinite  normal ease-out;
-    animation: floatBubble 15s infinite  normal ease-out;
+    -webkit-animation: floatBubble 55s infinite  normal ease-out;
+    animation: floatBubble 55s infinite  normal ease-out;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
 }
 #floating {
     position: relative;
-    margin-left: 480px;
-    -webkit-animation: floatBubble 20s infinite  normal ease-out;
-    animation: floatBubble 20s infinite  normal ease-out;
+    -webkit-animation: floatBubble 35s infinite  normal ease-out;
+    animation: floatBubble 35s infinite  normal ease-out;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
 }
 #floats {
     position: relative;
-    margin-bottom: 2000px;
-    margin-left: 880px;
-    -webkit-animation: floatBubble 10s infinite  normal ease-out;
-    animation: floatBubble 10s infinite  normal ease-out;
+    -webkit-animation: floatBubble 155s infinite  normal ease-out;
+    animation: floatBubble 155s infinite  normal ease-out;
     height: auto;
+    width: auto;
+    display: inline-block;
+}
+#floater {
+    position: relative;
+    -webkit-animation: floatBubble 55s infinite  normal ease-out;
+    animation: floatBubble 55s infinite  normal ease-out;
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+#floaty {
+    position: relative;
+    -webkit-animation: floatBubble 85s infinite  normal ease-out;
+    animation: floatBubble 85s infinite  normal ease-out;
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+#done {
+    position: relative;
+    -webkit-animation: floatBubble 180s infinite  normal ease-out;
+    animation: floatBubble 180s infinite  normal ease-out;
+    height: auto;
+    width: auto;
+    display: inline-block;
 }
 @-webkit-keyframes floatBubble {
     0% {
         top:800px;
     }
     100% {
-        top: 0px;
+        top: -500px;
     }
 }
 @keyframes floatBubble {
@@ -51,6 +90,6 @@ h1 {
         top:800px;
     }
     100% {
-        top: 0px;
+        top: -500px;
     }
 }

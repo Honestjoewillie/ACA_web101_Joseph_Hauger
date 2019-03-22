@@ -36,3 +36,5 @@ function play() {
                 window.open("./Buddha.html");    
         }
 }
+//num  % 2 == 0 ? is EVEN
+//num % 2 != 0 ? ODD
