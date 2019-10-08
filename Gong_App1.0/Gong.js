@@ -7,7 +7,7 @@ var count = (function() {
 })();
 function play() {
     var audio = document.getElementById("gonged");
-    if (audio.paused) {
+    if (audio.paused) {  
     audio.play();
     }
     else {
